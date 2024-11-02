@@ -19,3 +19,4 @@ Implementation of a Convolution Neural Network(CNN) Classifier for Classifying d
 Install dependencies using [conda](https://conda.io/docs/)
 
 ### Architecture
+![image](resources/architecture.png)

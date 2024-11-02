@@ -4,7 +4,7 @@
 ### Problem statement :
 
 Implementation of a Convolution Neural Network(CNN) Classifier for Classifying dog images. The dataset using for this model is CIFAR-10 and the dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. 
-#### Note: This link of dataset is[this](https://www.cs.toronto.edu/~kriz/cifar.html).
+#### Note: This link of dataset is [this](https://www.cs.toronto.edu/~kriz/cifar.html).
 
 ### Dependencies
 * Jupyter notebook
@@ -17,8 +17,5 @@ Implementation of a Convolution Neural Network(CNN) Classifier for Classifying d
 * Numpy
 
 Install dependencies using [conda](https://conda.io/docs/)
-
-#### Test Train Split
-Image training set contain 50000. I split those into 80% train and 20% means test Split each class images into 10,000 for train and 2,500 for test. 
 
 ### Architecture

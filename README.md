@@ -30,8 +30,16 @@ self.conv4 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=3, stride=1
 Network Parameter:
 * Rectifier Linear Unit (Activation function)
 * Adam optimizer
-* Sigmoid on Final output
+* Sigmoid on final output
 * Binary CrossEntropy loss
+* Learning rate
+
+
+```python
+criterion = nn.BCELoss() 
+optimizer = optim.Adam(cnn.parameters(), lr=0.001, weight_decay=1e-5)
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.5)
+```
 
 ## Data Augmentation
 Using data augmentation techniques to increase the data.
@@ -70,4 +78,12 @@ def get_data_augmentation():
 ![image](resources/output_conv_four.png)
 
 ### Model performance on new data
+For the classification of images, the result are:
+* Image 1: 99.92% of probability that is a Not dog
+* Image 2: 100.00% of probability that is a Dog
+* Image 3: 98.00% of probability that is a Dog
+* Image 4: 100.00% of probability that is a Dog
+* Image 5: 100.00% of probability that is a Dog
+
+Confusion Matrix
 ![image](resources/matrix.png)

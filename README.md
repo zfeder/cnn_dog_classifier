@@ -85,5 +85,5 @@ For the classification of images, the result are:
 * Image 4: 100.00% of probability that is a Dog
 * Image 5: 100.00% of probability that is a Dog
 
-Confusion Matrix
+### Confusion Matrix
 ![image](resources/matrix.png)

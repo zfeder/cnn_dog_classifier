@@ -50,11 +50,9 @@ Using data augmentation techniques to increase the data.
 ```python
 def get_data_augmentation():
     return transforms.Compose([
-        transforms.RandomHorizontalFlip(),  # Flip orizzontale casuale
-        transforms.RandomRotation(10),  # Rotazione casuale fino a 10 gradi
-        transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1),  # Variazioni di colore
-        transforms.ToTensor(),
-        transforms.Normalize((0.5,), (0.5,))  # Normalizzazione
+        transforms.RandomHorizontalFlip(), 
+        transforms.RandomRotation(10), 
+        transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1), 
     ])
 ```
 
